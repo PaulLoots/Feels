@@ -1,0 +1,186 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.Android/Feels.Android.csproj": {}
+  },
+  "projects": {
+    "/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.Android/Feels.Android.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.Android/Feels.Android.csproj",
+        "projectName": "Feels.Android",
+        "projectPath": "/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.Android/Feels.Android.csproj",
+        "packagesPath": "/Users/paulloots/.nuget/packages/",
+        "outputPath": "/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.Android/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/paulloots/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid81"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid81": {
+            "projectReferences": {
+              "/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels/Feels.csproj": {
+                "projectPath": "/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels/Feels.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid81": {
+          "dependencies": {
+            "Plugin.CurrentActivity": {
+              "target": "Package",
+              "version": "[2.1.0.4, )"
+            },
+            "Xamarin.Android.Support.Core.Utils": {
+              "target": "Package",
+              "version": "[28.0.0.1, )"
+            },
+            "Xamarin.Android.Support.CustomTabs": {
+              "target": "Package",
+              "version": "[28.0.0.1, )"
+            },
+            "Xamarin.Android.Support.Design": {
+              "target": "Package",
+              "version": "[28.0.0.1, )"
+            },
+            "Xamarin.Android.Support.v4": {
+              "target": "Package",
+              "version": "[28.0.0.1, )"
+            },
+            "Xamarin.Android.Support.v7.AppCompat": {
+              "target": "Package",
+              "version": "[28.0.0.1, )"
+            },
+            "Xamarin.Android.Support.v7.CardView": {
+              "target": "Package",
+              "version": "[28.0.0.1, )"
+            },
+            "Xamarin.Android.Support.v7.MediaRouter": {
+              "target": "Package",
+              "version": "[28.0.0.1, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Xamarin.FFImageLoading.Forms": {
+              "target": "Package",
+              "version": "[2.4.11.982, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[3.6.0.344457, )"
+            }
+          }
+        }
+      }
+    },
+    "/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels/Feels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels/Feels.csproj",
+        "projectName": "Feels",
+        "projectPath": "/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels/Feels.csproj",
+        "packagesPath": "/Users/paulloots/.nuget/packages/",
+        "outputPath": "/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/paulloots/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "AiForms.Effects": {
+              "target": "Package",
+              "version": "[1.5.5, )"
+            },
+            "DK.FFImageLoading.Platform.Headless": {
+              "target": "Package",
+              "version": "[4.1.9.191107012, )"
+            },
+            "FirebaseAuthentication.net": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "FirebaseDatabase.net": {
+              "target": "Package",
+              "version": "[4.0.4, )"
+            },
+            "FirebaseStorage.net": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Xam.Plugin.Media": {
+              "target": "Package",
+              "version": "[4.0.1.5, )"
+            },
+            "Xam.Plugins.Forms.ImageCircle": {
+              "target": "Package",
+              "version": "[3.0.0.5, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.3.1, )"
+            },
+            "Xamarin.FFImageLoading": {
+              "target": "Package",
+              "version": "[2.4.11.982, )"
+            },
+            "Xamarin.FFImageLoading.Forms": {
+              "target": "Package",
+              "version": "[2.4.11.982, )"
+            },
+            "Xamarin.FFImageLoading.Transformations": {
+              "target": "Package",
+              "version": "[2.4.11.982, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.3.0.991211, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Feels.AddPerson" BackgroundColor="Black" xmlns:ef="clr-namespace:AiForms.Effects;assembly=AiForms.Effects" >
+    <ContentPage.Content>
+        <!--<StackLayout>
+             navigation bar 
+            <StackLayout Orientation="Horizontal" Margin="31,66,31,0" x:Name="navLayout">
+                <StackLayout Margin="0,3,0,0" HorizontalOptions="StartAndExpand">
+                    <Label Text="Add Someone" TextColor="#F2F2F2" FontSize="32" HorizontalOptions="StartAndExpand">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                    <On Platform="iOS" Value="BreeSerif-Regular" />
+                                    <On Platform="Android" Value="BreeSerif-Regular.ttf#BreeSerif-Regular" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                </StackLayout>
+                <StackLayout Margin="0,7,0,0" HorizontalOptions="End">
+                    <Button Text="Cancel" Font="Bold,15" TextColor="#1DA9F4" Clicked="BackClicked"></Button>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout VerticalOptions="FillAndExpand">
+                <Image Source="radarrings" x:Name="radarrings" VerticalOptions="CenterAndExpand"></Image>
+                <StackLayout Margin="0,-334,0,100" x:Name="addmojiArea" ef:AddTouch.On="true" VerticalOptions="Center">
+                    <Image Source="addmojipicker" x:Name="addmojiIcon"></Image>
+                </StackLayout>
+                <Label HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Text="Looking for people nearby..." Font="15" TextColor="#828282" Margin="0,6,0,0" x:Name="nearbyTxt"></Label>
+            </StackLayout>
+        </StackLayout>-->
+    </ContentPage.Content>
+</ContentPage>

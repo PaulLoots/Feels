@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Feels.Info" BackgroundColor="Black">
+    <ContentPage.Content>
+        <Grid>
+            
+            <Grid.RowDefinitions>
+              <RowDefinition Height="140" />
+            </Grid.RowDefinitions>
+            
+        <ScrollView Grid.Row="1">
+            <Image Source="infobg"></Image> 
+        </ScrollView>
+            <StackLayout Orientation="Horizontal" Margin="0,0,0,0" Padding="31,66,31,0" x:Name="navLayout">
+                <StackLayout Margin="0,3,0,0" HorizontalOptions="StartAndExpand">
+                    <Label Text="Tone Key" TextColor="#E0E0E0" FontSize="36" HorizontalOptions="StartAndExpand">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                    <On Platform="iOS" Value="BreeSerif-Regular" />
+                                    <On Platform="Android" Value="BreeSerif-Regular.ttf#BreeSerif-Regular" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                </StackLayout>
+                <StackLayout Margin="0,8,0,0" HorizontalOptions="End">
+                    <Button Text="back" Font="Bold,15" TextColor="White" Clicked="HandleBackClicked"></Button>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

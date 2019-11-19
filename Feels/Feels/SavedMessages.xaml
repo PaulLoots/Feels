@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Feels.SavedMessages" NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+       <Grid>    
+        <Grid.RowDefinitions>
+          <RowDefinition Height="140" />
+          <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <!-- scroll layout -->
+        <ScrollView Grid.Row="1">
+            <StackLayout x:Name="mainContainer">
+                <Label Text="loading..." HorizontalOptions="Center" VerticalOptions="Center" Margin="30,0,30,0" x:Name="emptyMessage"></Label>
+            </StackLayout>
+        </ScrollView>
+        <!-- navigation bar -->
+        <StackLayout Orientation="Horizontal" Margin="0,0,0,0" Padding="15,44,15,0" x:Name="navBar">
+            <ImageButton Clicked="BackTapped" Source="back" VerticalOptions="Start" Margin="0,10,0,0"  x:Name="backImage"/>
+            <StackLayout Margin="6,3,0,0" HorizontalOptions="StartAndExpand">
+                <Label Text="Stash" TextColor="#000000" FontSize="36" HorizontalOptions="StartAndExpand">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="BreeSerif-Regular" />
+                                <On Platform="Android" Value="BreeSerif-Regular.ttf#BreeSerif-Regular" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+            </StackLayout>
+        </StackLayout>
+            </Grid>
+    </ContentPage.Content>
+</ContentPage>

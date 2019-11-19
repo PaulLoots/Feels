@@ -1,0 +1,43 @@
+﻿<Properties StartupConfiguration="{76A54757-99D7-4562-8641-7A21C42BB091}|Default">
+  <MonoDevelop.Ide.ItemProperties.Feels.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.24a1164fdf1efff3014856f8cae6b5f70ff3c369" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Feels/People.xaml.cs">
+    <Files>
+      <File FileName="Feels/AddPerson.xaml.cs" Line="10" Column="35" />
+      <File FileName="Feels/AddPerson.xaml" Line="1" Column="1" />
+      <File FileName="Feels/App.xaml" Line="5" Column="15" />
+      <File FileName="Feels/App.xaml.cs" Line="1" Column="1" />
+      <File FileName="Feels/People.xaml" Line="1" Column="1" />
+      <File FileName="Feels/People.xaml.cs" Line="29" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FeelsApp" expanded="True">
+            <Node name="Feels" expanded="True">
+              <Node name="Objects" expanded="True" />
+              <Node name="AddPerson.xaml" expanded="True" />
+              <Node name="App.xaml" expanded="True" />
+              <Node name="Chat.xaml" expanded="True" />
+              <Node name="Info.xaml" expanded="True" />
+              <Node name="Login.xaml" expanded="True" />
+              <Node name="Match.xaml" expanded="True" />
+              <Node name="People.xaml" expanded="True">
+                <Node name="People.xaml.cs" selected="True" />
+              </Node>
+              <Node name="Profile.xaml" expanded="True" />
+              <Node name="SavedMessages.xaml" expanded="True" />
+            </Node>
+            <Node name="Feels.iOS" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Feels.Android AndroidDesignerPreferredTheme="Theme.DeviceDefault.Light.NoActionBar.Fullscreen" PreferredExecutionTarget="Android.pixel" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

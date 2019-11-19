@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{76A54757-99D7-4562-8641-7A21C42BB091}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Feels.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>Feels.iOS</AssemblyName>
+    <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer: paulloots@me.com (PK6Z392298)</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <None Include="Entitlements.plist" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\swipeup.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\swipeup.imageset\swipeup.png" />
+    <ImageAsset Include="Assets.xcassets\swipeup.imageset\swipeup2x.png" />
+    <ImageAsset Include="Assets.xcassets\swipeup.imageset\swipeup3x.png" />
+    <ImageAsset Include="Assets.xcassets\tonepicker.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\neutralbg.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\chatemojigrid.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\slightlysmilingface.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\slightlysmilingface.imageset\slightly-smiling-face.png" />
+    <ImageAsset Include="Assets.xcassets\slightlysmilingface.imageset\slightly-smiling-face2x-2.png" />
+    <ImageAsset Include="Assets.xcassets\slightlysmilingface.imageset\slightly-smiling-face3x.png" />
+    <ImageAsset Include="Assets.xcassets\beamingfacewithsmilingeyes.imageset\beamingfacewithsmilingeyes.png" />
+    <ImageAsset Include="Assets.xcassets\beamingfacewithsmilingeyes.imageset\beamingfacewithsmilingeyes2x.png" />
+    <ImageAsset Include="Assets.xcassets\beamingfacewithsmilingeyes.imageset\beamingfacewithsmilingeyes3x.png" />
+    <ImageAsset Include="Assets.xcassets\beamingfacewithsmilingeyes.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\loudlycryingface.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\facewithsteamfromnose.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\facewithsymbolsonmouth.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\facewithrollingeyes.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\cryingface.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\loudlycryingface.imageset\loudlycryingface.png" />
+    <ImageAsset Include="Assets.xcassets\loudlycryingface.imageset\loudlycryingface2x.png" />
+    <ImageAsset Include="Assets.xcassets\loudlycryingface.imageset\loudlycryingface3x.png" />
+    <ImageAsset Include="Assets.xcassets\facewithsymbolsonmouth.imageset\facewithsymbolsonmouth.png" />
+    <ImageAsset Include="Assets.xcassets\facewithsymbolsonmouth.imageset\facewithsymbolsonmouth2x.png" />
+    <ImageAsset Include="Assets.xcassets\facewithsymbolsonmouth.imageset\facewithsymbolsonmouth3x.png" />
+    <ImageAsset Include="Assets.xcassets\facewithsteamfromnose.imageset\facewithsteamfromnose.png" />
+    <ImageAsset Include="Assets.xcassets\facewithsteamfromnose.imageset\facewithsteamfromnose2x.png" />
+    <ImageAsset Include="Assets.xcassets\facewithsteamfromnose.imageset\facewithsteamfromnose3x.png" />
+    <ImageAsset Include="Assets.xcassets\facewithrollingeyes.imageset\facewithrollingeyes.png" />
+    <ImageAsset Include="Assets.xcassets\facewithrollingeyes.imageset\facewithrollingeyes2x.png" />
+    <ImageAsset Include="Assets.xcassets\facewithrollingeyes.imageset\facewithrollingeyes3x.png" />
+    <ImageAsset Include="Assets.xcassets\cryingface.imageset\cryingface.png" />
+    <ImageAsset Include="Assets.xcassets\cryingface.imageset\cryingface2x.png" />
+    <ImageAsset Include="Assets.xcassets\cryingface.imageset\cryingface3x.png" />
+    <ImageAsset Include="Assets.xcassets\facewithmonocle.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\facewithmonocle.imageset\facewithmonocle.png" />
+    <ImageAsset Include="Assets.xcassets\facewithmonocle.imageset\facewithmonocle2x.png" />
+    <ImageAsset Include="Assets.xcassets\facewithmonocle.imageset\facewithmonocle3x.png" />
+    <ImageAsset Include="Assets.xcassets\flushedface.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\flushedface.imageset\flushedface.png" />
+    <ImageAsset Include="Assets.xcassets\flushedface.imageset\flushedface2x.png" />
+    <ImageAsset Include="Assets.xcassets\flushedface.imageset\flushedface3x.png" />
+    <ImageAsset Include="Assets.xcassets\nauseatedface.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\nauseatedface.imageset\nauseatedface.png" />
+    <ImageAsset Include="Assets.xcassets\nauseatedface.imageset\nauseatedface2x.png" />
+    <ImageAsset Include="Assets.xcassets\nauseatedface.imageset\nauseatedface3x.png" />
+    <ImageAsset Include="Assets.xcassets\smilingfacewithhalo.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\smilingfacewithhalo.imageset\smilingfacewithhalo.png" />
+    <ImageAsset Include="Assets.xcassets\smilingfacewithhalo.imageset\smilingfacewithhalo2x.png" />
+    <ImageAsset Include="Assets.xcassets\smilingfacewithhalo.imageset\smilingfacewithhalo3x.png" />
+    <ImageAsset Include="Assets.xcassets\explodinghead.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\explodinghead.imageset\explodinghead.png" />
+    <ImageAsset Include="Assets.xcassets\explodinghead.imageset\explodinghead2x.png" />
+    <ImageAsset Include="Assets.xcassets\explodinghead.imageset\explodinghead3x.png" />
+    <ImageAsset Include="Assets.xcassets\faceblowingakiss.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\faceblowingakiss.imageset\faceblowingakiss.png" />
+    <ImageAsset Include="Assets.xcassets\faceblowingakiss.imageset\faceblowingakiss2x.png" />
+    <ImageAsset Include="Assets.xcassets\faceblowingakiss.imageset\faceblowingakiss3x.png" />
+    <ImageAsset Include="Assets.xcassets\facescreaminginfear.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\facescreaminginfear.imageset\facescreaminginfear.png" />
+    <ImageAsset Include="Assets.xcassets\facescreaminginfear.imageset\facescreaminginfear2x.png" />
+    <ImageAsset Include="Assets.xcassets\facescreaminginfear.imageset\facescreaminginfear3x.png" />
+    <ImageAsset Include="Assets.xcassets\facewithtearsofjoy.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\facewithtearsofjoy.imageset\facewithtearsofjoy.png" />
+    <ImageAsset Include="Assets.xcassets\facewithtearsofjoy.imageset\facewithtearsofjoy2x.png" />
+    <ImageAsset Include="Assets.xcassets\facewithtearsofjoy.imageset\facewithtearsofjoy3x.png" />
+    <ImageAsset Include="Assets.xcassets\partyingface.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\partyingface.imageset\partyingface.png" />
+    <ImageAsset Include="Assets.xcassets\partyingface.imageset\partyingface2x.png" />
+    <ImageAsset Include="Assets.xcassets\partyingface.imageset\partyingface3x.png" />
+    <ImageAsset Include="Assets.xcassets\sleepingface.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\sleepingface.imageset\sleepingface.png" />
+    <ImageAsset Include="Assets.xcassets\sleepingface.imageset\sleepingface2x.png" />
+    <ImageAsset Include="Assets.xcassets\sleepingface.imageset\sleepingface3x.png" />
+    <ImageAsset Include="Assets.xcassets\smilingfacewithhearteyes.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\smilingfacewithhearteyes.imageset\smilingfacewithhearteyes.png" />
+    <ImageAsset Include="Assets.xcassets\smilingfacewithhearteyes.imageset\smilingfacewithhearteyes2x.png" />
+    <ImageAsset Include="Assets.xcassets\smilingfacewithhearteyes.imageset\smilingfacewithhearteyes3x.png" />
+    <ImageAsset Include="Assets.xcassets\smilingfacewithhorns.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\smilingfacewithhorns.imageset\smilingfacewithhorns.png" />
+    <ImageAsset Include="Assets.xcassets\smilingfacewithhorns.imageset\smilingfacewithhorns2x.png" />
+    <ImageAsset Include="Assets.xcassets\smilingfacewithhorns.imageset\smilingfacewithhorns3x.png" />
+    <ImageAsset Include="Assets.xcassets\zanyface.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\zanyface.imageset\zanyface.png" />
+    <ImageAsset Include="Assets.xcassets\zanyface.imageset\zanyface2x.png" />
+    <ImageAsset Include="Assets.xcassets\zanyface.imageset\zanyface3x.png" />
+    <ImageAsset Include="Assets.xcassets\cancel.imageset\cancel.png" />
+    <ImageAsset Include="Assets.xcassets\cancel.imageset\cancel2x.png" />
+    <ImageAsset Include="Assets.xcassets\cancel.imageset\cancel3x.png" />
+    <ImageAsset Include="Assets.xcassets\cancel.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\40.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\60.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\58.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\87.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\80.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\120.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\120-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\180.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\20.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\40-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\29.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\58-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\40-2.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\80-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\76.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\152.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\167.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\1024.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\watch.png" />
+    <ImageAsset Include="Assets.xcassets\back.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\profileimage.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\back.imageset\back-1.png" />
+    <ImageAsset Include="Assets.xcassets\back.imageset\back2x-1.png" />
+    <ImageAsset Include="Assets.xcassets\back.imageset\back3x-1.png" />
+    <ImageAsset Include="Assets.xcassets\profileimage.imageset\profileimage-1.png" />
+    <ImageAsset Include="Assets.xcassets\profileimage.imageset\profileimage2x-1.png" />
+    <ImageAsset Include="Assets.xcassets\profileimage.imageset\profileimage3x-1.png" />
+    <ImageAsset Include="Assets.xcassets\addperson.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\smilingfacewithsunglasses.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\smilingfacewithsunglasses.imageset\smilingfacewithsunglasses.png" />
+    <ImageAsset Include="Assets.xcassets\smilingfacewithsunglasses.imageset\smilingfacewithsunglasses2x.png" />
+    <ImageAsset Include="Assets.xcassets\smilingfacewithsunglasses.imageset\smilingfacewithsunglasses3x.png" />
+    <ImageAsset Include="Assets.xcassets\tonepickericon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\tonepickericon.imageset\tonepickericon.png" />
+    <ImageAsset Include="Assets.xcassets\tonepickericon.imageset\tonepickericon2x.png" />
+    <ImageAsset Include="Assets.xcassets\tonepickericon.imageset\tonepickericon3x.png" />
+    <ImageAsset Include="Assets.xcassets\logologin.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\passmojipicker.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\passmojigrid.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\passmojigrid.imageset\passmojigrid.png" />
+    <ImageAsset Include="Assets.xcassets\passmojigrid.imageset\passmojigrid2x.png" />
+    <ImageAsset Include="Assets.xcassets\passmojigrid.imageset\passmojigrid3x.png" />
+    <ImageAsset Include="Assets.xcassets\coldface.imageset\coldface.png" />
+    <ImageAsset Include="Assets.xcassets\coldface.imageset\coldface2x.png" />
+    <ImageAsset Include="Assets.xcassets\coldface.imageset\coldface3x.png" />
+    <ImageAsset Include="Assets.xcassets\coldface.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\hotface.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\hotface.imageset\hotface.png" />
+    <ImageAsset Include="Assets.xcassets\hotface.imageset\hotface2x.png" />
+    <ImageAsset Include="Assets.xcassets\hotface.imageset\hotface3x.png" />
+    <ImageAsset Include="Assets.xcassets\pileofpoo.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\pileofpoo.imageset\pileofpoo.png" />
+    <ImageAsset Include="Assets.xcassets\pileofpoo.imageset\pileofpoo2x.png" />
+    <ImageAsset Include="Assets.xcassets\pileofpoo.imageset\pileofpoo3x.png" />
+    <ImageAsset Include="Assets.xcassets\seenoevilmonkey.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\seenoevilmonkey.imageset\seenoevilmonkey.png" />
+    <ImageAsset Include="Assets.xcassets\seenoevilmonkey.imageset\seenoevilmonkey2x.png" />
+    <ImageAsset Include="Assets.xcassets\seenoevilmonkey.imageset\seenoevilmonkey3x.png" />
+    <ImageAsset Include="Assets.xcassets\zippermouthface.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\zippermouthface.imageset\zippermouthface.png" />
+    <ImageAsset Include="Assets.xcassets\zippermouthface.imageset\zippermouthface2x.png" />
+    <ImageAsset Include="Assets.xcassets\zippermouthface.imageset\zippermouthface3x.png" />
+    <ImageAsset Include="Assets.xcassets\addmojipicker.imageset\addmojipicker.png" />
+    <ImageAsset Include="Assets.xcassets\addmojipicker.imageset\addmojipicker2x.png" />
+    <ImageAsset Include="Assets.xcassets\addmojipicker.imageset\addmojipicker3x.png" />
+    <ImageAsset Include="Assets.xcassets\addmojipicker.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\addmojigrid.imageset\addmojigrid.png" />
+    <ImageAsset Include="Assets.xcassets\addmojigrid.imageset\addmojigrid2x.png" />
+    <ImageAsset Include="Assets.xcassets\addmojigrid.imageset\addmojigrid3x.png" />
+    <ImageAsset Include="Assets.xcassets\addmojigrid.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\radarrings.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\wavinghand.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\wavinghand.imageset\wavinghand.png" />
+    <ImageAsset Include="Assets.xcassets\wavinghand.imageset\wavinghand2x.png" />
+    <ImageAsset Include="Assets.xcassets\wavinghand.imageset\wavinghand3x.png" />
+    <ImageAsset Include="Assets.xcassets\profileimagelight.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\profileimagelight.imageset\profileimagelight.png" />
+    <ImageAsset Include="Assets.xcassets\profileimagelight.imageset\profileimagelight2x.png" />
+    <ImageAsset Include="Assets.xcassets\profileimagelight.imageset\profileimagelight3x.png" />
+    <ImageAsset Include="Assets.xcassets\matchbg.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\matchbg.imageset\matchbg.png" />
+    <ImageAsset Include="Assets.xcassets\matchbg.imageset\matchbg2x.png" />
+    <ImageAsset Include="Assets.xcassets\matchbg.imageset\matchbg3x.png" />
+    <ImageAsset Include="Assets.xcassets\matchbg.imageset\matchbg-1.png" />
+    <ImageAsset Include="Assets.xcassets\matchbg.imageset\matchbg2x-1.png" />
+    <ImageAsset Include="Assets.xcassets\matchbg.imageset\matchbg3x-1.png" />
+    <ImageAsset Include="Assets.xcassets\joybg.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\joybg.imageset\happyBG.png" />
+    <ImageAsset Include="Assets.xcassets\joybg.imageset\happyBG2x.png" />
+    <ImageAsset Include="Assets.xcassets\joybg.imageset\happyBG3x.png" />
+    <ImageAsset Include="Assets.xcassets\joybg.imageset\joybg.png" />
+    <ImageAsset Include="Assets.xcassets\joybg.imageset\joybg2x.png" />
+    <ImageAsset Include="Assets.xcassets\joybg.imageset\joybg3x.png" />
+    <ImageAsset Include="Assets.xcassets\angerbg.imageset\angerbg.png" />
+    <ImageAsset Include="Assets.xcassets\angerbg.imageset\angerbg2x.png" />
+    <ImageAsset Include="Assets.xcassets\angerbg.imageset\angerbg3x.png" />
+    <ImageAsset Include="Assets.xcassets\angerbg.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\celebrationbg.imageset\celebrationbg.png" />
+    <ImageAsset Include="Assets.xcassets\celebrationbg.imageset\celebrationbg2x.png" />
+    <ImageAsset Include="Assets.xcassets\celebrationbg.imageset\celebrationbg3x.png" />
+    <ImageAsset Include="Assets.xcassets\celebrationbg.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\confidentbg.imageset\confidentbg.png" />
+    <ImageAsset Include="Assets.xcassets\confidentbg.imageset\confidentbg2x.png" />
+    <ImageAsset Include="Assets.xcassets\confidentbg.imageset\confidentbg3x.png" />
+    <ImageAsset Include="Assets.xcassets\confidentbg.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\criticalbg.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\criticalbg.imageset\criticalbg.png" />
+    <ImageAsset Include="Assets.xcassets\criticalbg.imageset\criticalbg2x.png" />
+    <ImageAsset Include="Assets.xcassets\criticalbg.imageset\criticalbg3x.png" />
+    <ImageAsset Include="Assets.xcassets\disagreementbg.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\disagreementbg.imageset\disagreementbg.png" />
+    <ImageAsset Include="Assets.xcassets\disagreementbg.imageset\disagreementbg2x.png" />
+    <ImageAsset Include="Assets.xcassets\disagreementbg.imageset\disagreementbg3x.png" />
+    <ImageAsset Include="Assets.xcassets\disgustbg.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\disgustbg.imageset\disgustbg.png" />
+    <ImageAsset Include="Assets.xcassets\disgustbg.imageset\disgustbg2x.png" />
+    <ImageAsset Include="Assets.xcassets\disgustbg.imageset\disgustbg3x.png" />
+    <ImageAsset Include="Assets.xcassets\fearbg.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\fearbg.imageset\fearbg.png" />
+    <ImageAsset Include="Assets.xcassets\fearbg.imageset\fearbg2x.png" />
+    <ImageAsset Include="Assets.xcassets\fearbg.imageset\fearbg3x.png" />
+    <ImageAsset Include="Assets.xcassets\lovebg.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\lovebg.imageset\lovebg.png" />
+    <ImageAsset Include="Assets.xcassets\lovebg.imageset\lovebg2x.png" />
+    <ImageAsset Include="Assets.xcassets\lovebg.imageset\lovebg3x.png" />
+    <ImageAsset Include="Assets.xcassets\sadnessbg.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\sadnessbg.imageset\sadnessbg.png" />
+    <ImageAsset Include="Assets.xcassets\sadnessbg.imageset\sadnessbg2x.png" />
+    <ImageAsset Include="Assets.xcassets\sadnessbg.imageset\sadnessbg3x.png" />
+    <ImageAsset Include="Assets.xcassets\surprisebg.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\surprisebg.imageset\surprisebg.png" />
+    <ImageAsset Include="Assets.xcassets\surprisebg.imageset\surprisebg2x.png" />
+    <ImageAsset Include="Assets.xcassets\surprisebg.imageset\surprisebg3x.png" />
+    <ImageAsset Include="Assets.xcassets\tiredbg.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\tiredbg.imageset\tiredbg.png" />
+    <ImageAsset Include="Assets.xcassets\tiredbg.imageset\tiredbg2x.png" />
+    <ImageAsset Include="Assets.xcassets\tiredbg.imageset\tiredbg3x.png" />
+    <ImageAsset Include="Assets.xcassets\crazynessbg.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\crazynessbg.imageset\crazynessbg.png" />
+    <ImageAsset Include="Assets.xcassets\crazynessbg.imageset\crazynessbg2x.png" />
+    <ImageAsset Include="Assets.xcassets\crazynessbg.imageset\crazynessbg3x.png" />
+    <ImageAsset Include="Assets.xcassets\radarrings.imageset\radarrings-1.png" />
+    <ImageAsset Include="Assets.xcassets\radarrings.imageset\radarrings2x-1.png" />
+    <ImageAsset Include="Assets.xcassets\radarrings.imageset\radarrings3x-1.png" />
+    <ImageAsset Include="Assets.xcassets\chatemojigrid.imageset\chatemojigrid.png" />
+    <ImageAsset Include="Assets.xcassets\chatemojigrid.imageset\chatemojigrid2x.png" />
+    <ImageAsset Include="Assets.xcassets\chatemojigrid.imageset\chatemojigrid3x.png" />
+    <ImageAsset Include="Assets.xcassets\tonepickericon.imageset\tonepickericon-1.png" />
+    <ImageAsset Include="Assets.xcassets\tonepickericon.imageset\tonepickericon2x-1.png" />
+    <ImageAsset Include="Assets.xcassets\tonepickericon.imageset\tonepickericon3x-1.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\launchimage.png" />
+    <ImageAsset Include="Assets.xcassets\navprofileimage.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\navprofileimage.imageset\navprofileimage.png" />
+    <ImageAsset Include="Assets.xcassets\neutralbg.imageset\neutralBG.png" />
+    <ImageAsset Include="Assets.xcassets\neutralbg.imageset\neutralBG2x.png" />
+    <ImageAsset Include="Assets.xcassets\neutralbg.imageset\neutralBG3x.png" />
+    <ImageAsset Include="Assets.xcassets\launch.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\launch.imageset\launchimage.png" />
+    <ImageAsset Include="Assets.xcassets\launch.imageset\launchimage-1.png" />
+    <ImageAsset Include="Assets.xcassets\launch.imageset\launchimage-2.png" />
+    <ImageAsset Include="Assets.xcassets\error.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\error.imageset\error.png" />
+    <ImageAsset Include="Assets.xcassets\error.imageset\error2x.png" />
+    <ImageAsset Include="Assets.xcassets\error.imageset\error3x.png" />
+    <ImageAsset Include="Assets.xcassets\passmojipicker.imageset\passmojipicker-1.png" />
+    <ImageAsset Include="Assets.xcassets\passmojipicker.imageset\passmojipicker2x-1.png" />
+    <ImageAsset Include="Assets.xcassets\passmojipicker.imageset\passmojipicker3x-1.png" />
+    <ImageAsset Include="Assets.xcassets\peopleloading.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\camera.imageset\camera.png" />
+    <ImageAsset Include="Assets.xcassets\camera.imageset\camera2x.png" />
+    <ImageAsset Include="Assets.xcassets\camera.imageset\camera3x.png" />
+    <ImageAsset Include="Assets.xcassets\camera.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\imageplaceholder.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\imageplaceholder.imageset\imageplaceholder.png" />
+    <ImageAsset Include="Assets.xcassets\imageplaceholder.imageset\imageplaceholder2x.png" />
+    <ImageAsset Include="Assets.xcassets\imageplaceholder.imageset\imageplaceholder3x.png" />
+    <ImageAsset Include="Assets.xcassets\imageplaceholder.imageset\imageplaceholder-1.png" />
+    <ImageAsset Include="Assets.xcassets\imageplaceholder.imageset\imageplaceholder2x-1.png" />
+    <ImageAsset Include="Assets.xcassets\imageplaceholder.imageset\imageplaceholder3x-1.png" />
+    <ImageAsset Include="Assets.xcassets\trashclosed.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\trashclosed.imageset\trashclosed.png" />
+    <ImageAsset Include="Assets.xcassets\trashclosed.imageset\trashclosed2x.png" />
+    <ImageAsset Include="Assets.xcassets\trashclosed.imageset\trashclosed3x.png" />
+    <ImageAsset Include="Assets.xcassets\trashopened.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\trashopened.imageset\trashopened.png" />
+    <ImageAsset Include="Assets.xcassets\trashopened.imageset\trashopened2x.png" />
+    <ImageAsset Include="Assets.xcassets\trashopened.imageset\trashopened3x.png" />
+    <ImageAsset Include="Assets.xcassets\stashbtn.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\stashbtn.imageset\stash.png" />
+    <ImageAsset Include="Assets.xcassets\stashbtn.imageset\stash2x.png" />
+    <ImageAsset Include="Assets.xcassets\stashbtn.imageset\stash3x.png" />
+    <ImageAsset Include="Assets.xcassets\stashopen.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\stashopen.imageset\stashopen.png" />
+    <ImageAsset Include="Assets.xcassets\stashopen.imageset\stashopen2x.png" />
+    <ImageAsset Include="Assets.xcassets\stashopen.imageset\stashopen3x.png" />
+    <ImageAsset Include="Assets.xcassets\addperson.imageset\addperson.png" />
+    <ImageAsset Include="Assets.xcassets\addperson.imageset\addperson2x-1.png" />
+    <ImageAsset Include="Assets.xcassets\addperson.imageset\addperson3x.png" />
+    <ImageAsset Include="Assets.xcassets\profileicon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\profileicon.imageset\profileicon.png" />
+    <ImageAsset Include="Assets.xcassets\profileicon.imageset\profileicon2x.png" />
+    <ImageAsset Include="Assets.xcassets\profileicon.imageset\profileicon3x.png" />
+    <ImageAsset Include="Assets.xcassets\logologin.imageset\logologin-1.png" />
+    <ImageAsset Include="Assets.xcassets\logologin.imageset\logologin2x-1.png" />
+    <ImageAsset Include="Assets.xcassets\logologin.imageset\logologin3x-1.png" />
+    <ImageAsset Include="Assets.xcassets\peopleloading.imageset\peopleloading-1.png" />
+    <ImageAsset Include="Assets.xcassets\peopleloading.imageset\peopleloading2x-1.png" />
+    <ImageAsset Include="Assets.xcassets\peopleloading.imageset\peopleloading3x-1.png" />
+    <ImageAsset Include="Assets.xcassets\tonepicker.imageset\tonepicker.png" />
+    <ImageAsset Include="Assets.xcassets\tonepicker.imageset\tonepicker2x.png" />
+    <ImageAsset Include="Assets.xcassets\tonepicker.imageset\tonepicker3x.png" />
+    <ImageAsset Include="Assets.xcassets\infobg.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\infobg.imageset\infobg.png" />
+    <ImageAsset Include="Assets.xcassets\infobg.imageset\infobg2x.png" />
+    <ImageAsset Include="Assets.xcassets\infobg.imageset\infobg3x.png" />
+    <ImageAsset Include="Assets.xcassets\info.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\info.imageset\info.png" />
+    <ImageAsset Include="Assets.xcassets\info.imageset\info2x.png" />
+    <ImageAsset Include="Assets.xcassets\info.imageset\info3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
+    <PackageReference Include="Xamarin.Forms">
+      <Version>4.0.0.425677</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.FFImageLoading.Forms">
+      <Version>2.4.11.982</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\Feels\Feels.csproj">
+      <Project>{E9015957-DB13-417E-BD82-BE73A0BED6B6}</Project>
+      <Name>Feels</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\swipeup.imageset\" />
+    <Folder Include="Assets.xcassets\tonepicker.imageset\" />
+    <Folder Include="Assets.xcassets\neutralbg.imageset\" />
+    <Folder Include="Assets.xcassets\chatemojigrid.imageset\" />
+    <Folder Include="Assets.xcassets\slightlysmilingface.imageset\" />
+    <Folder Include="Assets.xcassets\beamingfacewithsmilingeyes.imageset\" />
+    <Folder Include="Assets.xcassets\loudlycryingface.imageset\" />
+    <Folder Include="Assets.xcassets\facewithsteamfromnose.imageset\" />
+    <Folder Include="Assets.xcassets\facewithsymbolsonmouth.imageset\" />
+    <Folder Include="Assets.xcassets\facewithrollingeyes.imageset\" />
+    <Folder Include="Assets.xcassets\cryingface.imageset\" />
+    <Folder Include="Assets.xcassets\facewithmonocle.imageset\" />
+    <Folder Include="Assets.xcassets\flushedface.imageset\" />
+    <Folder Include="Assets.xcassets\nauseatedface.imageset\" />
+    <Folder Include="Assets.xcassets\smilingfacewithhalo.imageset\" />
+    <Folder Include="Assets.xcassets\explodinghead.imageset\" />
+    <Folder Include="Assets.xcassets\faceblowingakiss.imageset\" />
+    <Folder Include="Assets.xcassets\facescreaminginfear.imageset\" />
+    <Folder Include="Assets.xcassets\facewithtearsofjoy.imageset\" />
+    <Folder Include="Assets.xcassets\partyingface.imageset\" />
+    <Folder Include="Assets.xcassets\sleepingface.imageset\" />
+    <Folder Include="Assets.xcassets\smilingfacewithhearteyes.imageset\" />
+    <Folder Include="Assets.xcassets\smilingfacewithhorns.imageset\" />
+    <Folder Include="Assets.xcassets\smilingfacewithsunglasses.imageset\" />
+    <Folder Include="Assets.xcassets\zanyface.imageset\" />
+    <Folder Include="Assets.xcassets\cancel.imageset\" />
+    <Folder Include="Assets.xcassets\back.imageset\" />
+    <Folder Include="Assets.xcassets\profileimage.imageset\" />
+    <Folder Include="Assets.xcassets\addperson.imageset\" />
+    <Folder Include="Assets.xcassets\smilingfacewithsunglasses.imageset\" />
+    <Folder Include="Assets.xcassets\tonepickericon.imageset\" />
+    <Folder Include="Assets.xcassets\logologin.imageset\" />
+    <Folder Include="Assets.xcassets\passmojipicker.imageset\" />
+    <Folder Include="Assets.xcassets\passmojigrid.imageset\" />
+    <Folder Include="Assets.xcassets\coldface.imageset\" />
+    <Folder Include="Assets.xcassets\hotface.imageset\" />
+    <Folder Include="Assets.xcassets\pileofpoo.imageset\" />
+    <Folder Include="Assets.xcassets\seenoevilmonkey.imageset\" />
+    <Folder Include="Assets.xcassets\zippermouthface.imageset\" />
+    <Folder Include="Assets.xcassets\addmojipicker.imageset\" />
+    <Folder Include="Assets.xcassets\addmojigrid.imageset\" />
+    <Folder Include="Assets.xcassets\radarrings.imageset\" />
+    <Folder Include="Assets.xcassets\wavinghand.imageset\" />
+    <Folder Include="Assets.xcassets\profileimagelight.imageset\" />
+    <Folder Include="Assets.xcassets\matchbg.imageset\" />
+    <Folder Include="Assets.xcassets\joybg.imageset\" />
+    <Folder Include="Assets.xcassets\angerbg.imageset\" />
+    <Folder Include="Assets.xcassets\celebrationbg.imageset\" />
+    <Folder Include="Assets.xcassets\confidentbg.imageset\" />
+    <Folder Include="Assets.xcassets\criticalbg.imageset\" />
+    <Folder Include="Assets.xcassets\disagreementbg.imageset\" />
+    <Folder Include="Assets.xcassets\disgustbg.imageset\" />
+    <Folder Include="Assets.xcassets\fearbg.imageset\" />
+    <Folder Include="Assets.xcassets\lovebg.imageset\" />
+    <Folder Include="Assets.xcassets\sadnessbg.imageset\" />
+    <Folder Include="Assets.xcassets\surprisebg.imageset\" />
+    <Folder Include="Assets.xcassets\tiredbg.imageset\" />
+    <Folder Include="Assets.xcassets\crazynessbg.imageset\" />
+    <Folder Include="Assets.xcassets\navprofileimage.imageset\" />
+    <Folder Include="Assets.xcassets\launch.imageset\" />
+    <Folder Include="Assets.xcassets\error.imageset\" />
+    <Folder Include="Assets.xcassets\peopleloading.imageset\" />
+    <Folder Include="Assets.xcassets\camera.imageset\" />
+    <Folder Include="Assets.xcassets\imageplaceholder.imageset\" />
+    <Folder Include="Assets.xcassets\trashclosed.imageset\" />
+    <Folder Include="Assets.xcassets\trashopened.imageset\" />
+    <Folder Include="Assets.xcassets\stashbtn.imageset\" />
+    <Folder Include="Assets.xcassets\stashopen.imageset\" />
+    <Folder Include="Assets.xcassets\profileicon.imageset\" />
+    <Folder Include="Assets.xcassets\infobg.imageset\" />
+    <Folder Include="Assets.xcassets\info.imageset\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BreeSerif-Regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+  </ItemGroup>
+</Project>

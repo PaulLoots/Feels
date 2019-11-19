@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Feels.Match" BackgroundImage="matchbg" xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin">
+    <ContentPage.Content>
+        <StackLayout Padding="0,100,0,0">
+            <StackLayout VerticalOptions="EndAndExpand">
+                <Label Text="It's a Match!" TextColor="#F2F2F2" FontSize="32" HorizontalOptions="CenterAndExpand">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                    <On Platform="iOS" Value="BreeSerif-Regular" />
+                                    <On Platform="Android" Value="BreeSerif-Regular.ttf#BreeSerif-Regular" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+            </StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand">
+              <controls:CircleImage Aspect="AspectFill" HeightRequest="120" WidthRequest="120" Source="profileimagelight" HorizontalOptions="CenterAndExpand" x:Name="personImage"></controls:CircleImage>
+            </StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand" Padding="20,0,20,0">
+              <Label Text="Do you want to chat to ?" Font="Bold, 20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" x:Name="nameLabel"></Label>
+            </StackLayout> 
+            <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <Button Text="Yes" CornerRadius="22" Font="Bold,18" BackgroundColor="#407142" TextColor="#F2F2F2" HeightRequest="44" WidthRequest="166" Clicked="YesClickedAsync"></Button>
+                <Button Text="No" Font="Bold,18" TextColor="#000000" HeightRequest="44" WidthRequest="166" Clicked="NoClicked" Margin="0,5,0,0"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

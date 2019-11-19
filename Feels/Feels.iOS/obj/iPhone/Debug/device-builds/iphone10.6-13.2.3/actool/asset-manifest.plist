@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>com.apple.actool.compilation-results</key>
+	<dict>
+		<key>output-files</key>
+		<array>
+			<string>/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.iOS/obj/iPhone/Debug/device-builds/iphone10.6-13.2.3/actool/bundle/AppIcon20x20@2x.png</string>
+			<string>/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.iOS/obj/iPhone/Debug/device-builds/iphone10.6-13.2.3/actool/bundle/AppIcon20x20@3x.png</string>
+			<string>/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.iOS/obj/iPhone/Debug/device-builds/iphone10.6-13.2.3/actool/bundle/AppIcon29x29@2x.png</string>
+			<string>/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.iOS/obj/iPhone/Debug/device-builds/iphone10.6-13.2.3/actool/bundle/AppIcon29x29@3x.png</string>
+			<string>/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.iOS/obj/iPhone/Debug/device-builds/iphone10.6-13.2.3/actool/bundle/AppIcon40x40@2x.png</string>
+			<string>/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.iOS/obj/iPhone/Debug/device-builds/iphone10.6-13.2.3/actool/bundle/AppIcon40x40@3x.png</string>
+			<string>/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.iOS/obj/iPhone/Debug/device-builds/iphone10.6-13.2.3/actool/bundle/AppIcon60x60@2x.png</string>
+			<string>/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.iOS/obj/iPhone/Debug/device-builds/iphone10.6-13.2.3/actool/bundle/AppIcon60x60@3x.png</string>
+			<string>/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.iOS/obj/iPhone/Debug/device-builds/iphone10.6-13.2.3/actool/bundle/AppIcon20x20~ipad.png</string>
+			<string>/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.iOS/obj/iPhone/Debug/device-builds/iphone10.6-13.2.3/actool/bundle/AppIcon20x20@2x~ipad.png</string>
+			<string>/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.iOS/obj/iPhone/Debug/device-builds/iphone10.6-13.2.3/actool/bundle/AppIcon29x29~ipad.png</string>
+			<string>/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.iOS/obj/iPhone/Debug/device-builds/iphone10.6-13.2.3/actool/bundle/AppIcon29x29@2x~ipad.png</string>
+			<string>/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.iOS/obj/iPhone/Debug/device-builds/iphone10.6-13.2.3/actool/bundle/AppIcon40x40~ipad.png</string>
+			<string>/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.iOS/obj/iPhone/Debug/device-builds/iphone10.6-13.2.3/actool/bundle/AppIcon40x40@2x~ipad.png</string>
+			<string>/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.iOS/obj/iPhone/Debug/device-builds/iphone10.6-13.2.3/actool/bundle/AppIcon76x76~ipad.png</string>
+			<string>/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.iOS/obj/iPhone/Debug/device-builds/iphone10.6-13.2.3/actool/bundle/AppIcon76x76@2x~ipad.png</string>
+			<string>/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.iOS/obj/iPhone/Debug/device-builds/iphone10.6-13.2.3/actool/bundle/AppIcon83.5x83.5@2x~ipad.png</string>
+			<string>/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.iOS/obj/iPhone/Debug/device-builds/iphone10.6-13.2.3/actool/bundle/LaunchImage-1100-Portrait-2436h@3x.png</string>
+			<string>/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.iOS/obj/iPhone/Debug/device-builds/iphone10.6-13.2.3/actool/bundle/Assets.car</string>
+			<string>/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.iOS/obj/iPhone/Debug/device-builds/iphone10.6-13.2.3/actool/partial-info.plist</string>
+		</array>
+	</dict>
+	<key>com.apple.actool.document.warnings</key>
+	<array>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./LaunchImage.launchimage</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.iOS/obj/iPhone/Debug/device-builds/iphone10.6-13.2.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>Launch images are deprecated in iOS 13.0. Use a launch storyboard or XIB instead.</string>
+			<key>type</key>
+			<string>Deprecation</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./LaunchImage.launchimage</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.iOS/obj/iPhone/Debug/device-builds/iphone10.6-13.2.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>An iPhone Retina (4-inch) launch image for iOS 7.0 and later is required.</string>
+			<key>type</key>
+			<string>Missing Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./imageplaceholder.imageset/(null)[2d][imageplaceholder.png]</string>
+				<string>./imageplaceholder.imageset/(null)[2d][imageplaceholder2x.png]</string>
+				<string>./imageplaceholder.imageset/(null)[2d][imageplaceholder3x.png]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.iOS/obj/iPhone/Debug/device-builds/iphone10.6-13.2.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "imageplaceholder" has 3 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./tonepickericon.imageset/(null)[2d][tonepickericon.png]</string>
+				<string>./tonepickericon.imageset/(null)[2d][tonepickericon2x.png]</string>
+				<string>./tonepickericon.imageset/(null)[2d][tonepickericon3x.png]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.iOS/obj/iPhone/Debug/device-builds/iphone10.6-13.2.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "tonepickericon" has 3 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./matchbg.imageset/(null)[2d][matchbg.png]</string>
+				<string>./matchbg.imageset/(null)[2d][matchbg2x.png]</string>
+				<string>./matchbg.imageset/(null)[2d][matchbg3x.png]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.iOS/obj/iPhone/Debug/device-builds/iphone10.6-13.2.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "matchbg" has 3 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./joybg.imageset/(null)[2d][happyBG.png]</string>
+				<string>./joybg.imageset/(null)[2d][happyBG2x.png]</string>
+				<string>./joybg.imageset/(null)[2d][happyBG3x.png]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.iOS/obj/iPhone/Debug/device-builds/iphone10.6-13.2.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "joybg" has 3 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./matchbg.imageset/(null)[2d][matchbg.png]</string>
+				<string>./matchbg.imageset/(null)[2d][matchbg2x.png]</string>
+				<string>./matchbg.imageset/(null)[2d][matchbg3x.png]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.iOS/obj/iPhone/Debug/device-builds/iphone10.6-13.2.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "matchbg" has 3 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./imageplaceholder.imageset/(null)[2d][imageplaceholder.png]</string>
+				<string>./imageplaceholder.imageset/(null)[2d][imageplaceholder2x.png]</string>
+				<string>./imageplaceholder.imageset/(null)[2d][imageplaceholder3x.png]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.iOS/obj/iPhone/Debug/device-builds/iphone10.6-13.2.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "imageplaceholder" has 3 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./LaunchImage.launchimage/[ipad][][2x][portrait][full-screen][7.0][1d][(null)]</string>
+				<string>./LaunchImage.launchimage/[iphone][][3x][landscape][full-screen][12.0][2d][(null)]</string>
+				<string>./LaunchImage.launchimage/[iphone][][3x][portrait][full-screen][12.0][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.iOS/obj/iPhone/Debug/device-builds/iphone10.6-13.2.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The launch image set "LaunchImage" has 5 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./joybg.imageset/(null)[2d][happyBG.png]</string>
+				<string>./joybg.imageset/(null)[2d][happyBG2x.png]</string>
+				<string>./joybg.imageset/(null)[2d][happyBG3x.png]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.iOS/obj/iPhone/Debug/device-builds/iphone10.6-13.2.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "joybg" has 3 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./tonepickericon.imageset/(null)[2d][tonepickericon.png]</string>
+				<string>./tonepickericon.imageset/(null)[2d][tonepickericon2x.png]</string>
+				<string>./tonepickericon.imageset/(null)[2d][tonepickericon3x.png]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/paulloots/Documents/OWI/3rd Year -2019/Development/term2/project/Feels/Feels.iOS/obj/iPhone/Debug/device-builds/iphone10.6-13.2.3/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "tonepickericon" has 3 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+	</array>
+</dict>
+</plist>

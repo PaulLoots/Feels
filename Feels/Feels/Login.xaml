@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Feels.Login" xmlns:ef="clr-namespace:AiForms.Effects;assembly=AiForms.Effects" BackgroundColor="#000000">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="31,64,31,0">
+                <StackLayout HorizontalOptions="Start" VerticalOptions="Start" Margin="0,0,0,70" x:Name="logoImg">
+                    <Image Source="logologin"></Image>
+                </StackLayout>
+                <StackLayout HorizontalOptions="Start" VerticalOptions="End" Orientation="Horizontal" x:Name="headingBtns">
+                    <Button Text="Login" Font="Bold,36" TextColor="#1976D2" Clicked="SwitchToLogin" x:Name="loginLabel"></Button>
+                    <Button Text="Sign Up" Font="Bold,36" TextColor="#4F4F4F" Margin="15,0,0,0" Clicked="SwitchToSignup" x:Name="signupLabel"></Button>
+                </StackLayout>
+                <StackLayout VerticalOptions="CenterAndExpand" x:Name="mainContainer">
+                    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Margin="0,0,0,30" x:Name="nickNameSection" IsVisible="false">
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="22,0,22,0">
+                                <Label Text="Nickname" Font="15" TextColor="#FFFFFF"></Label>
+                                <Label HorizontalOptions="EndAndExpand" Text="what your friends will see" Font="10" TextColor="#828282" Margin="0,3,0,0"></Label>
+                            </StackLayout>
+                            <Frame HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Padding="22,0,22,0" BackgroundColor="#333333" CornerRadius="22" HasShadow="false">
+                                <Entry HorizontalOptions="FillAndExpand" BackgroundColor="#333333" HeightRequest="44" Placeholder="eg. Smiley Face" PlaceholderColor="#828282" TextColor="#FFFFFF" x:Name="nickNameField"></Entry>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Margin="0,0,0,30" x:Name="emailSection">
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="22,0,22,0">
+                                <Label Text="Email" Font="15" TextColor="#FFFFFF"></Label>
+                                <Label HorizontalOptions="EndAndExpand" Text="only used to identify you" Font="10" TextColor="#828282" Margin="0,3,0,0"></Label>
+                            </StackLayout>
+                            <Frame HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Padding="22,0,22,0" BackgroundColor="#333333" CornerRadius="22" HasShadow="false">
+                                <Entry HorizontalOptions="FillAndExpand" BackgroundColor="#333333" HeightRequest="44" Keyboard="Email" Placeholder="eg. smiley@mail.com" PlaceholderColor="#828282" TextColor="#FFFFFF" x:Name="emailField"></Entry>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Margin="0,0,0,30">
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="22,0,22,0" x:Name="passmojiLabels">
+                                <Label Text="Passmoji" Font="15" TextColor="#FFFFFF"></Label>
+                                <Label HorizontalOptions="EndAndExpand" Text="like a password but with emoji" Font="10" TextColor="#828282" Margin="0,3,0,0"></Label>
+                            </StackLayout>
+                            <Frame HeightRequest="74" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Padding="22,0,22,0" BackgroundColor="#333333" CornerRadius="37" HasShadow="false" x:Name="passmojiFrame">
+                                <StackLayout Orientation="Horizontal" x:Name="passmojiArea" ef:AddTouch.On="true">
+                                    <StackLayout HorizontalOptions="CenterAndExpand" WidthRequest="60" HeightRequest="44" x:Name="passmojiconatiner1">
+                                        <Image Source="passmojipicker" HorizontalOptions="CenterAndExpand" Margin="0,15,0,0" x:Name="passmojiicon1"></Image>
+                                    </StackLayout>
+                                    <StackLayout HorizontalOptions="CenterAndExpand" WidthRequest="60" HeightRequest="44" x:Name="passmojiconatiner2">
+                                        <Image Source="passmojipicker" HorizontalOptions="CenterAndExpand" Margin="0,15,0,0" x:Name="passmojiicon2"></Image>
+                                    </StackLayout>
+                                    <StackLayout HorizontalOptions="CenterAndExpand" WidthRequest="60" HeightRequest="44" x:Name="passmojiconatiner3">
+                                        <Image Source="passmojipicker" HorizontalOptions="CenterAndExpand" Margin="0,15,0,0" x:Name="passmojiicon3"></Image>
+                                    </StackLayout>
+                                    <StackLayout HorizontalOptions="CenterAndExpand" WidthRequest="60" HeightRequest="44" x:Name="passmojiconatiner4">
+                                        <Image Source="passmojipicker" HorizontalOptions="CenterAndExpand" Margin="0,15,0,0" x:Name="passmojiicon4"></Image>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Image x:Name="errorIcon" Source="error" IsVisible="false"></Image>
+                        <Label x:Name="errorLabel" Text="Oops! Looks like you entered the incorrect email or password." TextColor="#E0E0E0" FontAttributes="Bold" FontSize="14" HorizontalOptions="CenterAndExpand" IsVisible="false"></Label>
+                        <Label x:Name="errorCanceledLabel" Text="Oh Dear! Looks like an issue wiht the connection. PLease try again.." TextColor="#E0E0E0" FontAttributes="Bold" FontSize="14" HorizontalOptions="CenterAndExpand" IsVisible="false"></Label>
+                        <Label x:Name="errorEmailLabel" Text="Hmm... Your email looks weird, please enter a valid email addrerss" TextColor="#E0E0E0" FontAttributes="Bold" FontSize="14" HorizontalOptions="CenterAndExpand" IsVisible="false"></Label>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand">
+                        <ActivityIndicator HorizontalOptions="EndAndExpand" Color="White" IsRunning="false" x:Name="loading" />
+                        <Button HorizontalOptions="EndAndExpand" Text="Sign Up" CornerRadius="22" Font="Bold,18" BackgroundColor="#33E3FFC5" TextColor="#7CB342" HeightRequest="44" WidthRequest="166" x:Name="signUpButton" Clicked="HandleSignUpAsync" IsVisible="false"></Button>
+                        <Button HorizontalOptions="EndAndExpand" Text="Login" CornerRadius="22" Font="Bold,18" BackgroundColor="#33609DD9" TextColor="#1976D2" HeightRequest="44" WidthRequest="166" x:Name="loginButton" Clicked="HandleLoginAsync"></Button>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

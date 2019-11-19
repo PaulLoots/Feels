@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Feels.People"
+             Title="People"
+             NavigationPage.HasNavigationBar="false"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             xmlns:ef="clr-namespace:AiForms.Effects;assembly=AiForms.Effects"
+             BackgroundColor="#000000"
+             >
+    <ContentPage.Content>
+<!--        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="People Page"></Label>
+            <Button Text="Go to chat" Clicked="Handle_Clicked"></Button>
+            <Button Text="Go to profile" Clicked="Handle_Clicked_Profile"></Button>
+            <Button Text="Go to gradient" Clicked="Handle_Clicked_Gradient"></Button>
+        </StackLayout>-->
+        <Grid>
+            
+            <Grid.RowDefinitions>
+              <RowDefinition Height="140" />
+            </Grid.RowDefinitions>
+
+            <!-- scroll layout -->
+            <ScrollView Grid.Row="1">
+                <StackLayout Padding="0,30,0,0" x:Name="peopleContainer">
+                    <!-- conversations -->
+                    <StackLayout x:Name="conversationWrapper" IsVisible="false">
+                    <StackLayout Padding="31,0,0,0">
+                        <Label Text="Chats" FontSize="20" Font="Bold,20" TextColor="#828282" HorizontalOptions="StartAndExpand"></Label>
+                    </StackLayout>
+                    <ScrollView HorizontalOptions="Fill" Orientation="Horizontal" Padding="31,0,0,0">
+                        <StackLayout Orientation="Horizontal" Padding="0,6,0,25" x:Name="conversationContainer">
+                            <!-- people go here -->
+                        </StackLayout>
+                    </ScrollView>
+                    </StackLayout>
+                     <!-- neutral -->
+                    <StackLayout x:Name="neutralWrapper" IsVisible="false">
+                    <StackLayout Padding="31,0,31,0" Orientation="Horizontal">
+                        <Label Text="Neutral" FontSize="20" Font="Bold,20" TextColor="#828282" HorizontalOptions="StartAndExpand"></Label>
+                        <ImageButton Margin="0,-10,0,0" Source="info" Clicked="InfoClicked"></ImageButton>
+                    </StackLayout>
+                    <ScrollView HorizontalOptions="Fill" Orientation="Horizontal" Padding="31,0,0,0">
+                        <StackLayout Orientation="Horizontal" Padding="0,6,0,25" x:Name="neutralContainer">
+                            <!-- people go here -->
+                        </StackLayout>
+                    </ScrollView>
+                    </StackLayout>
+                    <!-- positive -->
+                    <StackLayout x:Name="positiveWrapper" IsVisible="false">
+                    <StackLayout Padding="31,0,31,0" Orientation="Horizontal">
+                        <Label Text="Positive" FontSize="20" Font="Bold,20" TextColor="#828282" HorizontalOptions="StartAndExpand"></Label>
+                        <ImageButton Margin="0,-10,0,0" Source="info" Clicked="InfoClicked"></ImageButton>
+                    </StackLayout>
+                    <ScrollView HorizontalOptions="Fill" Orientation="Horizontal" Padding="31,0,0,0">
+                        <StackLayout Orientation="Horizontal" Padding="0,6,0,25" x:Name="positiveContainer">
+                            <!-- people go here -->
+                        </StackLayout>
+                    </ScrollView>
+                    </StackLayout>    
+                    <!-- negative -->
+                    <StackLayout x:Name="negativeWrapper" IsVisible="false">
+                    <StackLayout Padding="31,0,31,0" Orientation="Horizontal">
+                        <Label Text="Negative" FontSize="20" Font="Bold,20" TextColor="#828282" HorizontalOptions="StartAndExpand"></Label>
+                        <ImageButton Margin="0,-10,0,0" Source="info" Clicked="InfoClicked"></ImageButton>
+                    </StackLayout>
+                    <ScrollView HorizontalOptions="Fill" Orientation="Horizontal" Padding="31,0,0,0">
+                        <StackLayout Orientation="Horizontal" Padding="0,6,0,25" x:Name="negativeContainer">
+                            <!-- people go here -->
+                        </StackLayout>
+                    </ScrollView>
+                    </StackLayout>  
+                    <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" Padding="31,0,31,31">
+                        <ActivityIndicator Color="Gray" IsRunning="false" x:Name="loading" />
+                        <Frame Padding="8" HasShadow="false" BackgroundColor="#333333" HorizontalOptions="EndAndExpand" CornerRadius="30" x:Name="myMoodFrame">
+                            <StackLayout Orientation="Horizontal" Padding="0">
+                                <Label HorizontalOptions="CenterAndExpand" Text="My Mood" TextColor="#000000" Margin="8,2,0,0" FontSize="12" FontAttributes="Bold" VerticalOptions="Center" x:Name="myMoodLabel"></Label>
+                                <StackLayout x:Name="toneArea" WidthRequest="44" HeightRequest="44" ef:AddTouch.On="true">
+                                    <Image HorizontalOptions="EndAndExpand" Source="slightlysmilingface" x:Name="toneIcon"></Image>
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+            <!-- navigation bar -->
+            <StackLayout Orientation="Horizontal" Margin="0,0,0,0" Padding="31,66,31,0" x:Name="navLayout">
+                <StackLayout Margin="0,8,0,0" HorizontalOptions="Start">
+                    <Frame Padding="-1" CornerRadius="21" HasShadow="false" BackgroundColor="#E0E0E0" x:Name="profileFrame">
+                        <controls:CircleImage Aspect="AspectFill" HeightRequest="44" WidthRequest="44" Source="profileicon" HorizontalOptions="Start" x:Name="profileImage" />
+                    </Frame>
+                </StackLayout>
+                <StackLayout Margin="6,3,0,0" HorizontalOptions="StartAndExpand">
+                    <Label Text="People" TextColor="#F2F2F2" FontSize="36" HorizontalOptions="StartAndExpand">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                    <On Platform="iOS" Value="BreeSerif-Regular" />
+                                    <On Platform="Android" Value="BreeSerif-Regular.ttf#BreeSerif-Regular" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                </StackLayout>
+                <StackLayout Margin="0,8,0,0" HorizontalOptions="End" >
+                    <Frame Padding="-1" CornerRadius="21" HasShadow="false" BackgroundColor="#E0E0E0" x:Name="addPersonFrame">
+                        <Image Aspect="AspectFill" HeightRequest="44" WidthRequest="44" Source="addperson" HorizontalOptions="End" x:Name="addPersonImage" />
+                    </Frame>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
